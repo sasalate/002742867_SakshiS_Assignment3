@@ -20,7 +20,6 @@ var count = 3, btnSubcount = 0;
 
 
 // Show the details by hiding the dropdown on click.
-
 function dropDetails(event) {
     
     var row = event.parentNode.parentNode.nextElementSibling;
