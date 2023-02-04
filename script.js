@@ -20,6 +20,7 @@ var count = 3, btnSubcount = 0;
 
 
 // Show the details by hiding the dropdown on click.
+
 function dropDetails(event) {
     
     var row = event.parentNode.parentNode.nextElementSibling;
@@ -34,8 +35,10 @@ function dropDetails(event) {
 
 
 //Greyed out the submit button and non-clickable
+
 document.getElementById("button").style.backgroundColor ="gray";
 document.getElementById("button").style.pointerEvents ="none";
+
 
 // added function to add students 
 
@@ -58,7 +61,8 @@ function addnewstudent(){
     document.getElementById("lists").appendChild(newRow);
 
 
-    //create new-details row and copy details from other row 
+    //create new-details row and copy details from other row
+
     var expandedRow = document.createElement("tr");
     expandedRow.innerHTML = document.getElementsByClassName('dropDownTextArea')[0].innerHTML;
 
@@ -74,12 +78,14 @@ document.getElementById("myTable").addEventListener("click", function(event) {
     var checkBox = event.target;
 
     //check if only checkbox is clicked
+
     if(event.target.tagName === "INPUT" && event.target.type === "checkbox") {
 
         var row = checkBox.parentNode.parentNode;
         var expandedRow = checkBox.parentNode.parentNode.nextElementSibling;
 
         //changing the row colour to yellow by on-click
+        
         if(checkBox.checked){
             btnSubcount++;
 
